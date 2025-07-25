@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import ApiDemo from './ApiDemo';
 import './LandingPage.css';
 
 function LandingPage() {
@@ -192,10 +191,6 @@ function LandingPage() {
               </div>
             </div>
           </>
-        )}
-
-        {['add', 'edit', 'delete', 'view'].includes(activePage) && (
-          <ApiDemo activePage={activePage} />
         )}
       </div>
     </div>
